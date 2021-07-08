@@ -28,6 +28,7 @@ class ProductTable extends Component {
       row.push(
         <ProductRow name={name} price={price} stocked={stocked} key={name} />
       );
+      /** l'attribut key est important. Sinon ça ne marche pas */
     });
 
     return (
